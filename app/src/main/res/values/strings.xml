@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">virtual_idol</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_id">아이디</string>
+    <string name="prompt_password">비밀번호</string>
+    <string name="login">로그인</string>
+    <string name="auto_login">\t자동 로그인</string>
+    <string name="save_id">\t아이디 저장</string>
+    <string name="action_sign_in">확인</string>
+    <string name="sub_title_text">나만의\n아이돌을\n응원하자</string>
+
+    <string name="id_failed">아이디가 일치하지 않습니다.</string>
+    <string name="password_failed">비밀번호가 일치하지 않습니다.</string>
+    <string name="login_failed">로그인에 5회 실패하였습니다.\n비밀번호를 재설정 후 이용가능합니다.</string>
+    <string name="google_login">구글</string>
+    <string name="naver_login">네이버</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
