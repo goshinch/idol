@@ -2,4 +2,5 @@
 <resources>
     <color name="basic">#7C4DFF</color>
     <color name="vector">#FFFFFF</color>
+    <color name="background_cover">#80000000</color>
 </resources>

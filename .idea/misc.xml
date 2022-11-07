@@ -14,19 +14,22 @@
         <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/login_checkbox_custom.xml" value="0.2725" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/naver.xml" value="0.3005" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/naver_resize.xml" value="0.2325" />
+        <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/next_login_pager.xml" value="0.265" />
+        <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/splash_progressbar.xml" value="0.265" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/stroke.xml" value="0.2775" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/toolbar_menu.xml" value="0.2325" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/toolbar_search.xml" value="0.2325" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/drawable/wak_enter_resize.xml" value="0.2315" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.398828125" />
-        <entry key="..\:/git/virtual_idol/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/git/virtual_idol/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/layout/activity_scrolling.xml" value="0.36614583333333334" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/layout/activity_start_app.xml" value="0.36614583333333334" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/layout/content_scrolling.xml" value="0.1" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/layout/fragment_dashboard.xml" value="0.2635416666666667" />
-        <entry key="..\:/git/virtual_idol/app/src/main/res/layout/fragment_home.xml" value="0.21302083333333333" />
+        <entry key="..\:/git/virtual_idol/app/src/main/res/layout/fragment_home.xml" value="0.2975171232876712" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/layout/fragment_login.xml" value="0.3863393810032017" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
+        <entry key="..\:/git/virtual_idol/app/src/main/res/layout/fragment_sign_up.xml" value="0.22" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/layout/fragment_splash.xml" value="0.36614583333333334" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/git/virtual_idol/app/src/main/res/menu/menu_scrolling.xml" value="0.36614583333333334" />

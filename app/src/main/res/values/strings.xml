@@ -10,8 +10,8 @@
     <string name="login">로그인</string>
     <string name="auto_login">\t자동 로그인</string>
     <string name="save_id">\t아이디 저장</string>
-    <string name="action_sign_in">확인</string>
-    <string name="sub_title_text">나만의\n아이돌을\n응원하자</string>
+    <string name="action_ok">확인</string>
+    <string name="login_sub_text">나만의\n아이돌을\n응원하자</string>
 
     <string name="id_failed">아이디가 일치하지 않습니다.</string>
     <string name="password_failed">비밀번호가 일치하지 않습니다.</string>
@@ -24,4 +24,18 @@
     <string name="invalid_password">Password must be >5 characters</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Splash text-->
+    <string name="background_text">VIRTUAL\n*******IDOL</string>
+    <string name="background_text_with">with.****</string>
+    <string name="background_text_comment">아이돌과 일상 소통을\n나눠보세요!</string>
+
+    <!-- Sign Up-->
+    <string name="signup">회원가입</string>
+    <string name="email">이메일</string>
+    <string name="phone_num">전화번호</string>
+    <string name="Auth_request">인증\n요청</string>
+    <string name="nick_name">닉네임</string>
+    <string name="double_check">중복\n확인</string>
+    <string name="signup_sub_text">아이돌과\n소통하시려면\n회원가입이\n필요해요.</string>
 </resources>

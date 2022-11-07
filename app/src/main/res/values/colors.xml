@@ -12,4 +12,5 @@
     <color name="basic">#C730E0</color>
     <color name="vector">#000000</color>
     <color name="trans">#00000000</color>
+    <color name="background_cover">#80FFFFFF</color>
 </resources>

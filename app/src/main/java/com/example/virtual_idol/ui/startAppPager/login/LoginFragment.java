@@ -5,27 +5,34 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.virtual_idol.MainActivity;
 import com.example.virtual_idol.act.PagerHandler;
 import com.example.virtual_idol.act.Preferences;
+import com.example.virtual_idol.act.systembar.BarInsets;
+import com.example.virtual_idol.act.systembar.SystemBarsControllerCompat;
 import com.example.virtual_idol.databinding.FragmentLoginBinding;
 import com.example.virtual_idol.components.LOG;
 import com.google.android.material.checkbox.MaterialCheckBox;
 
-public class LoginFragment extends Fragment implements LOG {
+public class LoginFragment extends Fragment implements LOG, BarInsets {
 
     private LoginViewModel loginViewModel;
     private FragmentLoginBinding binding;
     private Preferences preferences;
-    private PagerHandler getPageCount;
+    private PagerHandler getPageHandle;
+    private SystemBarsControllerCompat systemBarsControllerCompat;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -39,20 +46,49 @@ public class LoginFragment extends Fragment implements LOG {
         preferences = Preferences.getInstance();
         preferences.setTable(getContext(), "check");
 
+        getPageHandle = PagerHandler.getInstance();
+
         binding.naverbtn.setOnClickListener(onClickNaver);
         binding.googlebtn.setOnClickListener(onClickGoogle);
 
-        binding.backpage.setOnClickListener(onClickBackpage);
+        binding.loginBackpage.setOnClickListener(onClickBackpage);
 
-        binding.signIn.setOnClickListener(onClickSignIn);
+        binding.ok.setOnClickListener(onClickOk);
 
-        getPageCount = PagerHandler.getInstance();
-
-        Log.d(TAG, "onCreateView: " + getPageCount.getCurrentPage());
+        binding.signup.setOnClickListener(onClickSiginup);
 
         View root = binding.getRoot();
         return root;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        systemBarsControllerCompat = SystemBarsControllerCompat.getIstance();
+        systemBarsController(systemBarsControllerCompat.windowController(getActivity().getWindow()));
+    }
+
+    @Override
+    public void systemBarsController(WindowInsetsControllerCompat controller) {
+        controller.show(NAVIGATION_BARS);
+    }
+
+    TextWatcher textWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable editable) {
+
+        }
+    };
 
     MaterialCheckBox.OnCheckedStateChangedListener onCheckedAutoLogin = new MaterialCheckBox.OnCheckedStateChangedListener() {
         @Override
@@ -70,6 +106,16 @@ public class LoginFragment extends Fragment implements LOG {
         }
     };
 
+    View.OnClickListener onClickSiginup = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Log.d(TAG, "onClick: " + view);
+            getPageHandle.setPagerCount(3);
+            getPageHandle.setAdapterPager();
+            getPageHandle.pagerChange(2);
+        }
+    };
+
     View.OnClickListener onClickNaver = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -84,7 +130,7 @@ public class LoginFragment extends Fragment implements LOG {
         }
     };
 
-    View.OnClickListener onClickSignIn = new View.OnClickListener() {
+    View.OnClickListener onClickOk = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Log.d(TAG, "onClick: " + view);
@@ -97,7 +143,7 @@ public class LoginFragment extends Fragment implements LOG {
     View.OnClickListener onClickBackpage = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            getPageCount.pagerBackChange();
+            getPageHandle.pagerChange(-1);
         }
     };
 }

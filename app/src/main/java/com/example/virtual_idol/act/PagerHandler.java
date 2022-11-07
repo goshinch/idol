@@ -1,5 +1,7 @@
 package com.example.virtual_idol.act;
 
+import android.util.Log;
+
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.virtual_idol.components.LOG;
@@ -20,15 +22,23 @@ public class PagerHandler implements LOG {
     public void setAdapter(PagerAdapter adapter) {
         this.adapter = adapter;
     }
+
     public void setViewpager(ViewPager2 pager) {
         this.pager = pager;
     }
 
-    public int getCurrentPage() {
-        return adapter.pagePo;
+    public void pagerChange(int po) {
+        Log.d(TAG, "pagerChange: "+pager.getCurrentItem());
+        pager.setCurrentItem(pager.getCurrentItem()+po);
     }
 
-    public void pagerBackChange() {
-        pager.setCurrentItem(adapter.pagePo-1);
+    public void setPagerCount(int cnt) {
+        Log.d(TAG, "setPagerCount: "+ cnt);
+        adapter.setPagerCount = cnt;
+        adapter.getItemCount();
+    }
+
+    public void setAdapterPager() {
+        pager.setAdapter(adapter);
     }
 }

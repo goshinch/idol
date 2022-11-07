@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.open_menu:
-                // User chose the "Settings" item, show the app settings UI...
+                // User chose the "Menu" item, show the app settings UI...
                 Toast.makeText(getApplicationContext(), "메뉴 버튼 클릭됨", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.search:
-                // User chose the "Settings" item, show the app settings UI...
+                // User chose the "Search" item, show the app settings UI...
                 Toast.makeText(getApplicationContext(), "검색 버튼 클릭됨", Toast.LENGTH_SHORT).show();
                 return true;
             default:
