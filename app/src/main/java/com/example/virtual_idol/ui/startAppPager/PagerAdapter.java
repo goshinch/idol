@@ -13,6 +13,8 @@ import com.example.virtual_idol.ui.startAppPager.login.LoginFragment;
 import com.example.virtual_idol.ui.startAppPager.login.signUp.SignupFragment;
 import com.example.virtual_idol.ui.startAppPager.splash.SplashFragment;
 
+import java.util.Objects;
+
 public class PagerAdapter extends FragmentStateAdapter implements LOG {
     //페이지 카운트 변수
     public int setPagerCount;
@@ -25,7 +27,8 @@ public class PagerAdapter extends FragmentStateAdapter implements LOG {
 
     //페이지 어댑터를 싱글톤으로 인스턴스 생성
     public static PagerAdapter getInstance(FragmentManager fm, Lifecycle lifecycle) {
-        if (pagerAdapter == null)
+        //if (pagerAdapter == null) 이렇게하면 비정상 종료후 재시작 시에 null 값인 상태로 시작해서 null point 가 뜸 왜 그런지는 좀 더 알아봐야겠다.
+        if (!Objects.equals(pagerAdapter, new PagerAdapter(fm, lifecycle)))
             pagerAdapter = new PagerAdapter(fm, lifecycle);
         return pagerAdapter;
     }

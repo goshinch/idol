@@ -13,4 +13,5 @@
     <color name="vector">#000000</color>
     <color name="trans">#00000000</color>
     <color name="background_cover">#80FFFFFF</color>
+    <color name="sign_search">#81AFFF</color>
 </resources>

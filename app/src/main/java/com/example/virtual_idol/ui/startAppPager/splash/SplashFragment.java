@@ -33,6 +33,7 @@ public class SplashFragment extends Fragment implements LOG, BarInsets{
         splashViewModel = new ViewModelProvider(this).get(SplashViewModel.class);
         binding = FragmentSplashBinding.inflate(inflater, container, false);
 
+        //페이저 핸들러
         getPageHandle = PagerHandler.getInstance();
 
         binding.nextLogin.setOnClickListener(onClickListener);
@@ -47,6 +48,7 @@ public class SplashFragment extends Fragment implements LOG, BarInsets{
         super.onResume();
         systemBarsControllerCompat = SystemBarsControllerCompat.getIstance();
         systemBarsController(systemBarsControllerCompat.windowController(getActivity().getWindow()));
+//        getPageHandle.pagerChange(1);
     }
 
     View.OnClickListener onClickListener = new View.OnClickListener() {

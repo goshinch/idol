@@ -5,7 +5,7 @@
     <item
         android:id="@+id/notify"
         app:showAsAction="always"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_baseline_notifications_none_24"
         android:title="notify" />
 
     <item

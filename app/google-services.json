@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "824209816030",
+    "project_id": "virtual-idol-project",
+    "storage_bucket": "virtual-idol-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824209816030:android:5147a6aebce7ebeaf7c54f",
+        "android_client_info": {
+          "package_name": "com.example.virtual_idol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824209816030-82gink6rtsgt5q67n49lhhjsape94a0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF4Qm5WWe1QhOgplCcrVUX2WHn_eJReE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824209816030-82gink6rtsgt5q67n49lhhjsape94a0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

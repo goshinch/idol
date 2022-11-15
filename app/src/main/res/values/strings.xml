@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">virtual_idol</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_community">Community</string>
+    <string name="title_my">My</string>
+    <string name="title_message">Message</string>
+    <string name="title_category">Category</string>
 
     <!-- Strings related to login -->
     <string name="prompt_id">아이디</string>
@@ -12,6 +14,8 @@
     <string name="save_id">\t아이디 저장</string>
     <string name="action_ok">확인</string>
     <string name="login_sub_text">나만의\n아이돌을\n응원하자</string>
+    <string name="email_search">아이디 찾기</string>
+    <string name="password_search">비밀번호 찾기</string>
 
     <string name="id_failed">아이디가 일치하지 않습니다.</string>
     <string name="password_failed">비밀번호가 일치하지 않습니다.</string>
@@ -20,9 +24,6 @@
     <string name="naver_login">네이버</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome!"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-
     <string name="action_settings">Settings</string>
 
     <!-- Splash text-->
@@ -35,7 +36,13 @@
     <string name="email">이메일</string>
     <string name="phone_num">전화번호</string>
     <string name="Auth_request">인증\n요청</string>
-    <string name="nick_name">닉네임</string>
+    <string name="nick_name">이름</string>
     <string name="double_check">중복\n확인</string>
     <string name="signup_sub_text">아이돌과\n소통하시려면\n회원가입이\n필요해요.</string>
+    <string name="password_ok">비밀번호 확인</string>
+    <string name="invalid_email">아이디는 이메일 형식으로 작성해주세요.</string>
+    <string name="invalid_id">아이디는 5자리 이상이어야 합니다.</string>
+    <string name="invalid_password">비밀번호는 10자리 이상이고 3자리 이상 숫자가 포함되어야 합니다.</string>
+    <string name="invalid_password_ok">입력하신 비밀번호가 서로 같지 않습니다.</string>
+
 </resources>

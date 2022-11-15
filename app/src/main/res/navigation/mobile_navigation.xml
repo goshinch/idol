@@ -11,12 +11,22 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.virtual_idol.ui.dashboard.DashboardFragment"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_category"
+        android:name="com.example.virtual_idol.ui.category.CategoryFragment"
+        tools:layout="@layout/fragment_category" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.virtual_idol.ui.notifications.NotificationsFragment"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_community"
+        android:name="com.example.virtual_idol.ui.community.CommunityFragment"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.virtual_idol.ui.message.MessageFragment"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/navigation_my"
+        android:name="com.example.virtual_idol.ui.my.MyFragment"
+        tools:layout="@layout/fragment_my" />
 </navigation>

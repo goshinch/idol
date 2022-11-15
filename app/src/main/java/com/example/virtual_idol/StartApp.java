@@ -17,7 +17,6 @@ public class StartApp extends AppCompatActivity implements LOG {
 
     private ActivityStartAppBinding binding;
     private PagerAdapter adapter;
-    private ViewPager2 pager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,22 +31,21 @@ public class StartApp extends AppCompatActivity implements LOG {
         binding = ActivityStartAppBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        pager = binding.pager;
 //        setContentView(R.layout.activity_start_app);
 //        adapter = new PagerAdapter(getSupportFragmentManager(), getLifecycle());
         adapter = PagerAdapter.getInstance(getSupportFragmentManager(), getLifecycle());
         PagerHandler pagerHandler = PagerHandler.getInstance();
         pagerHandler.setAdapter(adapter);
         pagerHandler.setPagerCount(2);
-        pagerHandler.setViewpager(pager);
+        pagerHandler.setViewpager(binding.pager);
         pagerHandler.setAdapterPager();
 
     }
 
     @Override
     public void onBackPressed() {
-        if (pager.getCurrentItem() == 0)
+        if (binding.pager.getCurrentItem() == 0)
             super.onBackPressed();
-        else pager.setCurrentItem(0);
+        else binding.pager.setCurrentItem(0);
     }
 }
